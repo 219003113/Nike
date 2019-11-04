@@ -3,10 +3,10 @@ var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"1e32222cfa91
 $zoho.salesiq.ready = function (embedinfo) {
     $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
         if (triggername == 'NEXT') {
-            do();
+            do_function ();
         }
     });
 }
-function do() {
+function do_function() {
     console.log("DID IT");
 }
