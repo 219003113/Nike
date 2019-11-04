@@ -39,15 +39,17 @@
 		function trig(){
 		    $zoho.salesiq.visitor.customaction("Trigger");
 		}
+	    </script>
+	<script>
+		$zoho.salesiq.ready = function (embedinfo) {
 		    $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
-		
-			if(triggername=="Alerter"){
-			    alert("Alerter JS API");
-			    console.log("Alerter");
+			if (triggername == 'Alerter') {
+			   console.log("Alerter");
 			}
 		    });
-	
-	    </script>
+		    // other JSAPIs here
+		}
+	</script>
 
 	<!-- Start Header Area -->
 	<header class="header_area sticky-header">
