@@ -38,14 +38,15 @@
 	    <script >
 		function trig(){
 		    $zoho.salesiq.visitor.customaction("Trigger");
-		    //$zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
-			// Your code here
-			//if(triggername=="Alerter"){
-			  //  alert("Alerter JS API");
-			//}
-		    //});
-		    // other JSAPIs here
 		}
+		    $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+		
+			if(triggername=="Alerter"){
+			    alert("Alerter JS API");
+			    console.log("Alerter");
+			}
+		    });
+	
 	    </script>
 
 	<!-- Start Header Area -->
